@@ -10451,3 +10451,9 @@ button {
 	color: var(--color-white);
 }
 /*# sourceMappingURL=style.css.map */
+#currentTime{
+	letter-spacing: 1px;
+}
+.statusBar{
+	background-color: #2e279d;
+}

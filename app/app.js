@@ -14,37 +14,6 @@ myApp.config(['$routeProvider',function($routeProvider){
     .otherwise({redirectTo: '/home'});
 }]);
 
-myApp.controller('MyAngularController', ['$scope','$http',function($scope,$http){
-
-    $scope.removeStd =  function(std){
-        let removeStd = $scope.students.indexOf(std);
-        $scope.students.splice(removeStd,1);
-    };
-    $scope.addStd = function(){
-        $scope.students.push({
-            name:$scope.newStd.Name,
-            marks:parseInt($scope.newStd.Marks),
-            sal:parseInt($scope.newStd.Sal),
-            p:true
-        });
-        $scope.newStd.Name="";
-        $scope.newStd.Marks="";
-        $scope.newStd.Sal="";
-
-    };        
-    
-    
-    $http.get('data/students.json').success(function(stdData){
-        $scope.students = stdData;
-    });
-
-    // $http.get('data/appointments.json').success(function(appointData){
-    //     $scope.students = appointData;
-    // });
-
-
-}]);
-
 myApp.controller('MyAppointmentController', ['$scope','$http',function($scope,$http){
     
     $http.get('data/appointments.json').success(function(appointData){
@@ -59,3 +28,14 @@ myApp.controller('MyDosageController', ['$scope','$http',function($scope,$http){
     });
 
 }]);
+
+let d;
+let date;
+let time;
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+setInterval(() => {
+    d = new Date();
+    date = d.toLocaleDateString(undefined, options);
+    time = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+    document.getElementById('currentTime').innerHTML = time + " on " + date ;
+}, 1);
