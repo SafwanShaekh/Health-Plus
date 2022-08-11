@@ -1,0 +1,44 @@
+<h3 class="m-5 p-5">Active Students</h3>
+<div class="m-5 p-5">
+    <div>
+        <input type="text" name="" id="" ng-model="src" placeholder="Search Name">
+    </div>
+    <br>
+    <div>
+        <button ng-click="order = 'name'">Sort by Name</button>
+        <button ng-click="order = 'marks'">Sort by Marks</button>
+    </div>
+    <br>
+    <!-- <ul>
+        <li ng-repeat="std in students | orderBy: order | filter: src" ng-show="std.p">{{std.name}} has obtained {{std.marks}} marks</li>
+    </ul> -->
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Marks</th>
+                <th>Student Salary</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="std in students | orderBy: order | filter: src" ng-show="std.p">
+                <td><img ng-src="{{std.thumb}}" alt="stdImg"></td>
+                <td>{{std.name}}</td>
+                <td>{{std.marks}}</td>
+                <td>{{std.sal | currency:'PKR '}}</td>
+                <td><span class="remove" ng-click="removeStd(std)">X</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Add new Student</h3>
+    <form ng-submit="addStd()">
+        <input type="text" placeholder="Name" ng-model="newStd.Name">
+        <br>
+        <input type="text" placeholder="Marks" ng-model="newStd.Marks">
+        <br>
+        <input type="text" placeholder="Salary" ng-model="newStd.Sal">
+        <br>
+        <input type="submit" value="Add Student">
+    </form>
+</div>

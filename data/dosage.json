@@ -1,0 +1,99 @@
+[{
+    "NameOfMedication": "panadol",
+    "Dose": "2tablets",
+    "Timing": "Any time",
+    "When": "After food",
+    "Till": "When needed",
+    "type": "painkiller",
+    "cause": "headache"
+},
+{
+    "NameOfMedication": "Amoxcilin",
+    "Dose": "1-tablets",
+    "Timing": "morning",
+    "When": "Before Food",
+    "Till": "As prescribed",
+    "type": "Antibiotics",
+    "cause": "ear infection"
+},
+
+{
+    "NameOfMedication": "Avastin",
+    "Dose": "2tablets",
+    "Timing": "night",
+    "When": "after food",
+    "Till": "12 august",
+    "type": "cancer drug",
+    "cause": "cancer"
+},
+
+{
+    "NameOfMedication": "Azithromycin",
+    "Dose": "1tablets",
+    "Timing": "noon",
+    "When": "Before Food",
+    "Till": "As prescribed",
+    "type": "painkiller",
+    "cause": "headache"
+},
+
+{
+    "NameOfMedication": "Zytiga",
+    "Dose": "2tablets",
+    "Timing": "morning",
+    "When": "Before Food",
+    "Till": "29 august",
+    "type": "cancer drug",
+    "cause": "breast cancer"
+},
+
+{
+    "NameOfMedication": "Metformin",
+    "Dose": "2tablets",
+    "Timing": "noon",
+    "When": "After food",
+    "Till": "every day",
+    "type": "2-diabetes",
+    "cause": "Diabetes"
+},
+
+{
+    "NameOfMedication": "Herceptin",
+    "Dose": "1 tablets",
+    "Timing": "noon",
+    "When": "After food",
+    "Till": "19 august",
+    "type": "cancer drug",
+    "cause": "stomach cancer"
+},
+
+{
+    "NameOfMedication": "Anglotensin",
+    "Dose": "2tablets",
+    "Timing": "morning,night",
+    "When": "After food",
+    "Till": "every day",
+    "type": "High blood pressure",
+    "cause": "headache"
+},
+
+{
+    "NameOfMedication": "neulasta",
+    "Dose": "1tablets",
+    "Timing": "night",
+    "When": "Before Food",
+    "Till": "15 august",
+    "type": "cancer drug",
+    "cause": "brain tumor"
+},
+
+{
+    "NameOfMedication": "Pecicillins",
+    "Dose": "3tablets",
+    "Timing": "morning,noon,night",
+    "When": "after food",
+    "Till": "18 August",
+    "type": "Antibiotics",
+    "cause": "syphilis"
+}
+]
