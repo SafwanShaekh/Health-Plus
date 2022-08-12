@@ -11,6 +11,7 @@ myApp.config(['$routeProvider',function($routeProvider){
     .when('/health-measures',{templateUrl: 'Views/Health-Measures.html'})
     .when('/feedback',{templateUrl: 'Views/Feedback.html'})
     .when('/contact',{templateUrl: 'Views/Contact.html'})
+    .when('/faqs',{templateUrl: 'Views/Faqs.html'})
     .otherwise({redirectTo: '/home'});
 }]);
 
