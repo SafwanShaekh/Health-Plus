@@ -21,7 +21,10 @@
 	--font-inter: 'Inter', sans-serif;
 	--font-lora: 'Lora', serif;
 }
-
+.appointment-details-container{
+	width: 85%;
+	margin: 0 auto;
+}
 body {
 	color: var(--color-body);
 	font-family: var(--font-inter);
