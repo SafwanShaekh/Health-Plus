@@ -1,0 +1,55 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="appointment-details-container" id="appointment-details">
+    <section>
+    <h2> Health Vitals Details</h2>
+    <form class="mt-3">
+        <div class="mb-3">
+            <input class="form-control" type="text" ng-model="src" placeholder="Search an Appointment">
+        </div>
+        <div class="mb-3">
+            <button class="btn" ng-click="order = 'Doctortype'">Sort by Doctortype</button>
+            <button class="btn" ng-click="order = 'For'">Sort by For</button>
+        </div>
+    </form>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>NameOfMedication</th>
+                <th>Dose</th>
+                <th>Timing</th>
+                <th>When</th>
+                <th>Till</th>
+                <th>Type</th>
+                <th>Cause</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Amoxcilin</td>
+                <td>1-tablets</td>
+                <td>morning</td>
+                <td>Before Food</td>
+                <td>As prescribed</td>
+                <td>Antibiotics</td>
+                <td>ear infection</td>                
+            </tr>
+            <tr>
+                <td>Avastin</td>
+                <td>1-tablets</td>
+                <td>morning</td>
+                <td>Before Food</td>
+                <td>As prescribed</td>
+                <td>Antibiotics</td>
+                <td>ear infection</td>                
+            </tr>
+        </tbody>
+    </table>
+</section>
+</div>
